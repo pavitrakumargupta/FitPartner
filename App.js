@@ -40,13 +40,15 @@ const App = () => {
   } 
 
   const handleUser=(value,verifiedValue)=>{
-    setMoviePage(value)
+    
+    setUser(value)
     setUserVerified(verifiedValue)
     console.log(value);
   }
 
   const handleSelectedMovie=(value)=>{
-    setUser(value)
+    setMoviePage(value)
+    setSelectedMovie(value)
     console.log(value);
   }
 
